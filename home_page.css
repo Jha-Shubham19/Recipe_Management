@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+}
+
+nav h1 {
+	font-size: 24px;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.search input {
+	padding: 10px;
+    border: none;
+	box-shadow: 0px 0px 2px #333;
+	border-radius: 5px 0 0 5px;
+	width: 70%;
+}
+
+.search button {
+	padding: 10px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px;
+}
+
+.card {
+	position: relative;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 10px;
+	padding: 20px;
+	width: 300px;
+}
+
+.card h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.card p {
+	font-size: 16px;
+
+	max-height: 6em; /* Set the maximum height to two lines */
+	overflow:hidden; /* Hide any overflow */
+	text-overflow: ellipsis; /* Add an ellipsis if the text is truncated */
+	  
+}
+.card>ul {
+	list-style: none;
+	/* display: block; */
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card>ul>li {
+	display: inline;
+	margin: 5px;
+	padding: 3px 10px;
+	background-color: rgb(88, 88, 253);
+	color: white;
+	border-radius: 1000px;
+}
+a{
+	text-decoration: none;
+	color: #fff !important;
+}
+.veg,.nonveg {
+	position: absolute;
+	height: 10%;
+	aspect-ratio: 1;
+	bottom:10px;
+	right: 10px;
+	background-color: green;
+	pointer-events: none; /* add this line */
+}
+.nonveg {
+	background-color: red;
+}
+
+
+
+.tooltip {
+	position: absolute;
+	right: 10px;
+	top:10px;
+	display: inline-block;
+	cursor: pointer;
+	
+  }
+  
+  
+  .tooltip ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	display: none;
+  }
+  
+  .tooltip:hover ul {
+	display: block;
+  }
+  
+  .tooltip ul li {
+	padding: 10px;
+	cursor: pointer;
+  }
+  
+  .tooltip ul li:hover {
+	background-color: #f1f1f1;
+  }
+  
